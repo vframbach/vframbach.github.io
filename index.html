@@ -4,35 +4,91 @@
 		<meta charset="UTF-8">
 		<!-- set viewport to device width to make site responsive -->
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<!-- bootstrap css -->
-		<link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
+    <!-- jquery -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
+    <!-- handlebars -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.3/handlebars.min.js"></script>
 		<!-- custom styles -->
 		<link rel="stylesheet" type="text/css" href="main.css">
 		<title>Victoria Frambach | Web Developer</title>
 	</head>
 	<body>
-		<nav>
-			<div class="nav-wrapper card-panel #424242 grey darken-3">
-				<a href="#" class="brand-logo">Victoria Frambach | Web Developer</a>
-				<ul id="nav-mobile" class="right hide-on-med-and-down">
-					<li><a href="https://github.com/vframbach">Github</a></li>
-					<li><a href="https://www.linkedin.com/in/vframbach">LinkedIn</a></li>
-					<li><a href="https://takeahike-app.herokuapp.com">Take a Hike</a></li>
-					<li><a href="http://50staterun.com">50 State Run</a></li>
-				</ul>
-			</div>
-		</nav>
-		<!-- Compiled and minified CSS -->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
-		<!-- Compiled and minified JavaScript -->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
-		
-		<!-- jquery -->
-		<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-		<!-- bootstrap js -->
-		<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-		<!-- handlebars -->
-		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.3/handlebars.min.js"></script>
+    <nav class="grey darken-3">
+      <div class="nav-wrapper">
+        <div class="container">
+          <div class="row">
+            <div class="col s12">
+              <a href="#" class="brand-logo">Victoria Frambach</a>
+              <ul class="right hide-on-med-and-down">
+                <li><a href="https://github.com/vframbach" target="_blank">Github</a></li>
+                <li><a href="https://linkedin.com/in/vframbach" target="_blank">LinkedIn</a></li>
+              </ul>
+              <ul id="slide-out" class="side-nav">
+                <li><a href="https://outside-bound.herokuapp.com">Outside Bound</a></li>
+                <li><a href="https://takeahike-app.herokuapp.com">Take a Hike</a></li>
+                <li><a href="https://districtfive.herokuapp.com">Watson</a></li>
+                <li><a href="https://github.com/vframbach">Github</a></li>
+                <li><a href="https://linkedin.com/in/vframbach">LinkedIn</a></li>
+              </ul>
+              <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row">
+        <div class="card-panel hoverable">
+          <img class="responsive-img" src="ob1.png">  
+          <h5><a href="https://outside-bound.herokuapp.com" target="_blank">Outside Bound</a></h5>
+          <ul>
+            <li>Outside Bound provides the closest trails to campsites in 4 West Coast cities.</li>
+            <li>Uses Javascript, jQuery, Backbone, Underscore, ReserveAmerica and EveryTrail APIs, Elasticsearch, Amazon Elasticsearch Service, Mapbox, Cheerio, Node, Express, and Bootstrap.</li>
+            <li><a href="https://github.com/vframbach/trail-camp" target="_blank">Github</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="card-panel hoverable">
+          <img class="responsive-img" src="takeahike.png"> 
+          <h5><a href="https://takeahike-app.herokuapp.com" target="_blank">Take a Hike</a></h5>
+          <ul>
+            <li>To log in: username "demo" and password "demo123".</li>
+            <li>Take a Hike provides nearby hiking meetups from Meetup.com.</li>
+            <li>Uses Javascript, jQuery, Node.js, Express, Meetup and Google Maps APIs, MongoDB, Bootstrap, and Socket.io.</li>
+            <li><a href="https://github.com/vframbach/project1" target="_blank">Github</a></li>
+          </ul>
+        </div>    
+      </div>
+      <div class="row">
+        <div class="card-panel hoverable">
+          <img class="responsive-img" src="watson.png"> 
+          <h5><a href="https://districtfive.herokuapp.com" target="_blank">Watson</a></h5>
+          <ul>
+            <li>To log in: username "demo@demo" and password "demo123".</li>
+            <li>Allows users to retrieve their tweets from their public Twitter account for analysis of personality traits (Big 5, needs, values), as well as positivity sentiment and concepts tweeted about.</li>
+            <li>Uses Ruby on Rails, Javascript, jQuery, PostgreSQL, Watson API (Personality Insights), and Watson API (Alchemy)</li>
+            <li>This app was developed as a team effort with <a href="https://github.com/stanleyyork" target="_blank">Stanley Stevens</a> and <a href="https://github.com/abeytaadam" target="_blank">Adam Abeyta</a></li>
+            <li><a href="https://github.com/stanleyyork/watson" target="_blank">Github</a></li>
+          </ul>
+        </div>    
+      </div>
+      <div class="row">
+        <div class="card-panel hoverable">
+          <img class="responsive-img" src="critterpic.png"> 
+          <h5><a href="http://critter.framba.ch" target="_blank">Critter</a></h5>
+          <ul>
+            <li>Critter puts a spin on the standard blog app. The title of a blog post is linked to a related Giphy image to be added to the post.</li>
+            <li>Uses Javascript, jQuery, Node, Express, MongoDB, Giphy API.</li>
+            <li><a href="https://github.com/vframbach/express-microblog" target="_blank">Github</a></li>
+          </ul>
+        </div>    
+      </div>
+    </div>  
 		<!-- custom script -->
 		<script type="text/javascript" src="main.js"></script>
 	</body>
